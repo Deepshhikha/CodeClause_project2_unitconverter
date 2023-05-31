@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<title>project 2</title >
+<style>
+@import url("style.css");
+</style >
+<main>
+<h1>welcome to unit conversion web page</h1>
+<p>
+ unit converter for conversion units 
+</p>
+
+<a href="kilometer to meter">Kilometer to meter</a>
+
+<!DOCTYPE html>
+<head>
+<style>
+   body{
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   }
+   input,span{
+      font-size: 20px;
+   }
+</style>
+</head>
+<body>
+<h3>Length Converter</h3>
+<h3>Type length in Kilometers to convert it into meters</h3>
+<p>
+<label>Kilometers</label>
+<input id="inputKm" type="number" placeholder="Kilometers"
+oninput="KmtoMConverter(this.value)" onchange="KmtoMConverter(this.value)">
+</p>
+<p>Meters: <span class="meters"></span></p>
+<script>
+   function KmtoMConverter(length) {
+      document.querySelector(".meters").innerHTML=length*1000;
+ }
+</script>
+</body>
+</html>
+</nav>
+</main>
